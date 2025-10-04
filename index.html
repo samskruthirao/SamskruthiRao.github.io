@@ -15,9 +15,9 @@
         <div class="container">
             <a href="#home" class="nav-brand">SRG</a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -28,7 +28,7 @@
             <h1>Samskruthi Rao Gandra</h1>
             <h2>Software Engineer & Master's Student in Machine Learning</h2>
             <p class="hero-summary">
-                [cite_start]Software Engineer with over 4 years of experience building and shipping enterprise-grade, full-stack applications[cite: 4]. [cite_start]Currently pursuing a Master's in Computer Science at the University of Texas at Austin to specialize in Machine Learning and scalable systems[cite: 10, 11, 12]. [cite_start]Seeking an internship to leverage a robust background in Java, Python, and cloud infrastructure (AWS) for the end-to-end development of intelligent applications—from model creation in PyTorch to production deployment[cite: 70, 78, 299].
+                Software Engineer with over 4 years of experience building and shipping enterprise-grade, full-stack applications. Currently pursuing a Master's in Computer Science at the University of Texas at Austin to specialize in Machine Learning and scalable systems. Seeking an internship to leverage a robust background in Java, Python, and cloud infrastructure (AWS) for the end-to-end development of intelligent applications—from model creation in PyTorch to production deployment.
             </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -38,14 +38,26 @@
     </section>
 
     <main>
-        <section id="about" class="container section">
-            <h2>About Me</h2>
-            <p>
-                [cite_start]With a foundation of over four years building and shipping enterprise-grade software for the insurance industry, I've developed a deep appreciation for creating robust, scalable solutions[cite: 4, 5]. [cite_start]My work at companies like Erie Insurance and Capgemini has given me hands-on experience in full-stack development, cloud systems, and leading agile teams[cite: 18, 23, 35].
-            </p>
-            <p>
-                [cite_start]Now, I'm channeling that practical experience into my Master's at the University of Texas at Austin, where my focus is on the exciting field of Machine Learning[cite: 10, 11, 12]. My goal is to bridge the gap between powerful ML models and real-world, production-ready applications.
-            </p>
+        <section id="skills" class="container section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>Python, Java, JavaScript, SQL, GOSU, Kotlin</p>
+                </div>
+                <div class="skill-category">
+                    <h3>ML & Data</h3>
+                    <p>PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy, SMOTE</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & APIs</h3>
+                    <p>AWS (Certified Practitioner), Firebase, REST, SOAP, Google Events API</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Developer Tools</h3>
+                    <p>Git, GitHub, TeamCity, CI/CD, Postman, DataDog</p>
+                </div>
+            </div>
         </section>
 
         <section id="experience" class="container section">
@@ -55,9 +67,9 @@
                 <h4>Erie Insurance | Erie, PA</h4>
                 <p class="date">Jan 2024 – Present</p>
                 <ul>
-                    [cite_start]<li>Engineered and led 3+ major cloud application upgrades for an enterprise insurance platform[cite: 20].</li>
-                    [cite_start]<li>Developed full-stack features, building robust API integrations and custom business logic[cite: 22].</li>
-                    [cite_start]<li>Managed and monitored the CI/CD pipeline using TeamCity, DataDog, and Guidewire Cloud Console[cite: 21].</li>
+                    <li>Engineered and led 3+ major cloud application upgrades for an enterprise insurance platform, achieving zero downtime through phased rollouts and automated testing.</li>
+                    <li>Developed full-stack features for a large-scale Java-based application, building robust API integrations and custom business logic to meet client requirements.</li>
+                    <li>Managed and monitored the CI/CD pipeline using TeamCity, DataDog, and Guidewire Cloud Console to ensure system health and rapid, reliable deployments.</li>
                 </ul>
             </div>
             <div class="experience-item">
@@ -65,18 +77,9 @@
                 <h4>Capgemini | Hyderabad, India</h4>
                 <p class="date">Oct 2020 – Nov 2023</p>
                 <ul>
-                    [cite_start]<li>Shipped new features for a Guidewire PolicyCenter application used across 7+ U.S. states[cite: 25].</li>
-                    [cite_start]<li>Mentored and led a team of 5 junior developers on agile methodologies[cite: 31, 35].</li>
-                    [cite_start]<li>Automated client report generation using a Python Flask application, reducing manual work[cite: 46].</li>
-                </ul>
-            </div>
-             <div class="experience-item">
-                <h3>Software Engineering Intern</h3>
-                <h4>Microsoft | Hyderabad, India</h4>
-                <p class="date">Sep 2018 – Sep 2019</p>
-                <ul>
-                    [cite_start]<li>Worked on enhancing image recognition models and training pipelines for handwritten numeral detection using Python and TensorFlow[cite: 55].</li>
-                    [cite_start]<li>Collaborated with a cross-functional team to integrate the developed model into a production pipeline[cite: 57].</li>
+                    <li>Shipped new features for a Guidewire PolicyCenter application used across 7+ U.S. states, enhancing functionality for thousands of users.</li>
+                    <li>Mentored and led a team of 5 junior developers on agile methodologies, improving team code quality and on-time delivery of features.</li>
+                    <li>Automated client report generation using a Python Flask application, reducing over 20 hours of manual work per month.</li>
                 </ul>
             </div>
         </section>
@@ -86,17 +89,17 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <h3>Deep Learning for Insurance Fraud Detection</h3>
-                    <p>Developed and trained a Multilayer Perceptron (MLP) model in PyTorch to classify fraudulent automobile insurance claims. [cite_start]Achieved 90% accuracy and 1.0 recall on the test set[cite: 299, 456].</p>
-                    <p class="tech-stack"><strong>Tech:</strong> Python, PyTorch, Scikit-learn, Pandas</p>
+                    <p>Developed and trained a Multilayer Perceptron (MLP) and a Deep Residual Network to classify fraudulent automobile insurance claims. Achieved a test accuracy of 90% and a recall of 1.0 with the MLP model.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Python, PyTorch, Scikit-learn</p>
                     <div class="project-links">
                         <a href="#">View Paper</a>
                         <a href="#">View Code</a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <h3>Event Management Mobile App</h3>
-                    [cite_start]<p>Architected a full-featured Android application for users to discover, create, and manage local events[cite: 107, 108]. [cite_start]Integrated Firebase for user authentication, Firestore for the database, and Cloud Messaging for real-time notifications[cite: 132].</p>
-                    <p class="tech-stack"><strong>Tech:</strong> Kotlin, Android Studio, Firebase, Google Events API</p>
+                    <h3>EventVista: Event Management & Discovery App</h3>
+                    <p>Architected and developed a full-featured Android application that allows users to discover local events, create their own, and connect with the community. Integrated Firebase for authentication, Firestore for database, and Cloud Messaging for real-time notifications.</p>
+                    <p class="tech-stack"><strong>Tech:</strong> Kotlin, Firebase, Android Studio</p>
                     <div class="project-links">
                         <a href="#">View Proposal</a>
                         <a href="#">View Code</a>
@@ -105,6 +108,28 @@
             </div>
         </section>
         
+        <section id="education" class="container section">
+            <h2>Education & Publications</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                    <h3>University of Texas at Austin</h3>
+                    <p><strong>Master of Science in Computer Science</strong> (2024 – Present)</p>
+                    <p class="coursework"><strong>Relevant Courses:</strong> Advanced Deep Learning, NLP, Android Programming, Case Studies in ML, Planning Search & Reasoning.</p>
+                </div>
+                <div class="education-item">
+                    <h3>BVRIT Hyderabad</h3>
+                    <p><strong>Bachelor of Technology in Information Technology</strong> (2016 – 2020)</p>
+                </div>
+            </div>
+            <div class="publications-item">
+                <h3>Publications & Articles</h3>
+                <ul>
+                    <li><strong>Enhancing Fraud Detection in Insurance Claims Using Advanced ML</strong> (Course Paper)</li>
+                    <li><strong>From On-Prem to On-Demand: A Developer’s Guide to Guidewire Cloud</strong> (Medium, In Progress)</li>
+                </ul>
+            </div>
+        </section>
+
         <section id="contact" class="container section">
             <h2>Contact</h2>
             <p>I'm currently seeking internship opportunities and am always open to discussing technology, machine learning, or new projects. Let's connect!</p>
